@@ -1,0 +1,63 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebsiteTestt
+build_property.RootNamespace = WebsiteTestt
+build_property.ProjectDir = C:\Users\mucah\Desktop\CursorProjectsFolder\WebsiteTestt\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\mucah\Desktop\CursorProjectsFolder\WebsiteTestt
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/mucah/Desktop/CursorProjectsFolder/WebsiteTestt/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mucah/Desktop/CursorProjectsFolder/WebsiteTestt/Pages/FaaliyetAlanlari.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmFhbGl5ZXRBbGFubGFyaS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mucah/Desktop/CursorProjectsFolder/WebsiteTestt/Pages/Hakkimizda.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGFra2ltaXpkYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mucah/Desktop/CursorProjectsFolder/WebsiteTestt/Pages/Iletisim.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWxldGlzaW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mucah/Desktop/CursorProjectsFolder/WebsiteTestt/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mucah/Desktop/CursorProjectsFolder/WebsiteTestt/Pages/Randevu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmFuZGV2dS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mucah/Desktop/CursorProjectsFolder/WebsiteTestt/Pages/Yayinlar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcWWF5aW5sYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mucah/Desktop/CursorProjectsFolder/WebsiteTestt/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mucah/Desktop/CursorProjectsFolder/WebsiteTestt/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mucah/Desktop/CursorProjectsFolder/WebsiteTestt/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mucah/Desktop/CursorProjectsFolder/WebsiteTestt/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

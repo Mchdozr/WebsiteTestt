@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\css\\sections\\_animations.css",
+      "PackagePath": "staticwebassets\\css\\sections\\_animations.css"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\css\\sections\\_header.css",
+      "PackagePath": "staticwebassets\\css\\sections\\_header.css"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\css\\sections\\_hero.css",
+      "PackagePath": "staticwebassets\\css\\sections\\_hero.css"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\css\\sections\\_services.css",
+      "PackagePath": "staticwebassets\\css\\sections\\_services.css"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\css\\sections\\_stats.css",
+      "PackagePath": "staticwebassets\\css\\sections\\_stats.css"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\css\\sections\\_variables.css",
+      "PackagePath": "staticwebassets\\css\\sections\\_variables.css"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\images\\library-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\library-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebsiteTestt.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WebsiteTestt.props",
+      "PackagePath": "build\\WebsiteTestt.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WebsiteTestt.props",
+      "PackagePath": "buildMultiTargeting\\WebsiteTestt.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WebsiteTestt.props",
+      "PackagePath": "buildTransitive\\WebsiteTestt.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

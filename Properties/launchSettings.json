@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "WebsiteTestt": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:49222;http://localhost:49223"
+    }
+  }
+}

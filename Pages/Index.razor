@@ -1,0 +1,73 @@
+@page "/"
+@inject IJSRuntime JS
+
+<div class="parallax-section hero">
+    <div class="hero-content">
+        <h1>Hukuk Büromuz</h1>
+        <p class="hero-subtitle">Profesyonel hukuki danışmanlık ve çözümler için yanınızdayız</p>
+        <div class="hero-buttons">
+            <a href="/iletisim" class="cta-button primary">Bize Ulaşın</a>
+            <a href="/hakkimizda" class="cta-button secondary">Daha Fazla Bilgi</a>
+        </div>
+    </div>
+</div>
+
+<div class="parallax-section services">
+    <div class="section-content">
+        <div class="service-grid">
+            <a href="/ticaret-hukuku" class="service-card fade-in-section">
+                <div class="service-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>Ticaret Hukuku</h3>
+                <p>Şirketler hukuku alanında uzman danışmanlık</p>
+            </a>
+            <a href="/gayrimenkul-hukuku" class="service-card fade-in-section">
+                <div class="service-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3>Gayrimenkul Hukuku</h3>
+                <p>Tüm gayrimenkul işlemlerinizde profesyonel destek</p>
+            </a>
+            <a href="/dava-tahkim" class="service-card fade-in-section">
+                <div class="service-icon">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <h3>Dava ve Tahkim</h3>
+                <p>Ulusal ve uluslararası uyuşmazlık çözümlerinde uzman yaklaşım</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="stats-section">
+    <div class="stats-content">
+        <div class="stat-item fade-in-section">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Yıllık Tecrübe</div>
+        </div>
+        <div class="stat-item fade-in-section">
+            <div class="stat-number">1000+</div>
+            <div class="stat-label">Başarılı Dava</div>
+        </div>
+        <div class="stat-item fade-in-section">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Mutlu Müvekkil</div>
+        </div>
+    </div>
+</div>
+
+<div class="floating-contact">
+    <a href="/iletisim" class="cta-button primary">İletişime Geçin</a>
+</div>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initParallax");
+            StateHasChanged();
+        }
+    }
+}

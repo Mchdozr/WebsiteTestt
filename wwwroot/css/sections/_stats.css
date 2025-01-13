@@ -1,0 +1,127 @@
+.stats-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(44, 41, 37, 0.4),
+        rgba(58, 54, 49, 0.5)
+    ),
+    url('../images/office-bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 41, 37, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.stats-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.stat-item {
+    background: rgba(44, 41, 37, 0.75);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(216, 208, 201, 0.15);
+    border-radius: 20px;
+    padding: 3rem 4rem;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at var(--mouse-x, center) var(--mouse-y, center),
+                rgba(216, 208, 201, 0.1) 0%,
+                transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.stat-item:hover::before {
+    opacity: 1;
+}
+
+.stat-number {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--light-color);
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg,
+        var(--text-color) 0%,
+        var(--light-color) 50%,
+        var(--text-color) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textShine 5s ease infinite;
+}
+
+.stat-label {
+    font-size: 1.4rem;
+    color: var(--light-color);
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+    .stats-content {
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+    
+    .stat-item {
+        padding: 2rem 3rem;
+    }
+    
+    .stat-number {
+        font-size: 3.5rem;
+    }
+    
+    .stat-label {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-content {
+        flex-direction: column;
+        padding: 4rem 1rem;
+    }
+    
+    .stat-item {
+        width: 100%;
+        max-width: 300px;
+    }
+} 

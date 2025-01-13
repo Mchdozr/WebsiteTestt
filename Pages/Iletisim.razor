@@ -1,0 +1,57 @@
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Components.Forms
+@page "/iletisim"
+
+<div class="page-container">
+    <h1 class="page-title">İletişim</h1>
+    <div class="contact-content">
+        <div class="contact-info">
+            <h2>İletişim Bilgileri</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Adres: [Adres bilgisi]</p>
+            <p><i class="fas fa-phone"></i> Telefon: [Telefon numarası]</p>
+            <p><i class="fas fa-envelope"></i> E-posta: [E-posta adresi]</p>
+        </div>
+        
+        <div class="contact-form">
+            <h2>Bize Ulaşın</h2>
+            <EditForm Model="@contactForm" OnValidSubmit="@HandleSubmit">
+                <DataAnnotationsValidator />
+                <div class="form-group">
+                    <label>Ad Soyad</label>
+                    <InputText @bind-Value="contactForm.Name" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>E-posta</label>
+                    <InputText @bind-Value="contactForm.Email" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Mesaj</label>
+                    <InputTextArea @bind-Value="contactForm.Message" class="form-control" />
+                </div>
+                <button type="submit" class="submit-button">Gönder</button>
+            </EditForm>
+        </div>
+    </div>
+</div>
+
+@code {
+    private ContactForm contactForm = new();
+
+    private class ContactForm
+    {
+        [Required(ErrorMessage = "Ad Soyad alanı zorunludur")]
+        public string? Name { get; set; }
+
+        [Required(ErrorMessage = "E-posta alanı zorunludur")]
+        [EmailAddress(ErrorMessage = "Geçerli bir e-posta adresi giriniz")]
+        public string? Email { get; set; }
+
+        [Required(ErrorMessage = "Mesaj alanı zorunludur")]
+        public string? Message { get; set; }
+    }
+
+    private void HandleSubmit()
+    {
+        // Form gönderme işlemleri burada yapılacak
+    }
+} 
