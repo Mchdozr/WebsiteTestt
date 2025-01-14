@@ -1,73 +1,172 @@
 @page "/"
-@inject IJSRuntime JS
+@inject IJSRuntime JSRuntime
 
-<div class="parallax-section hero">
+<div class="hero-section">
     <div class="hero-content">
-        <h1>Hukuk Büromuz</h1>
-        <p class="hero-subtitle">Profesyonel hukuki danışmanlık ve çözümler için yanınızdayız</p>
-        <div class="hero-buttons">
-            <a href="/iletisim" class="cta-button primary">Bize Ulaşın</a>
-            <a href="/hakkimizda" class="cta-button secondary">Daha Fazla Bilgi</a>
+        <h1>GAYE HUKUK BÜROSU</h1>
+        <p>Profesyonel Hukuki Çözüm Ortağınız</p>
+    </div>
+</div>
+
+<style>
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url('/images/library-bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: 1;
+    margin-top: -60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: var(--white);
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    color: var(--accent-color);
+    letter-spacing: 1px;
+}
+
+@@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+</style>
+
+<div class="about-section">
+    <div class="container">
+        <div class="about-content">
+            <h2>Hakkımızda</h2>
+            <p class="lead-text">
+                Gaye Hukuk Bürosu olarak, müvekkillerimize kapsamlı ve profesyonel hukuki danışmanlık hizmetleri sunmaktayız.
+                Deneyimli ekibimiz ile ticaret hukukundan aile hukukuna, ceza hukukundan iş hukukuna kadar geniş bir yelpazede
+                uzman hukuki destek sağlıyoruz.
+            </p>
+            <p class="sub-text">
+                Modern hukuk anlayışı ile geleneksel değerleri birleştirerek, müvekkillerimizin haklarını en etkin şekilde
+                korumak için çalışıyoruz. Her davada titiz ve özverili yaklaşımımızla fark yaratıyoruz.
+            </p>
         </div>
     </div>
 </div>
 
-<div class="parallax-section services">
-    <div class="section-content">
-        <div class="service-grid">
-            <a href="/ticaret-hukuku" class="service-card fade-in-section">
+<div class="services-section">
+    <div class="container">
+        <h2 class="section-title">Çalışma Alanlarımız</h2>
+        <div class="services-grid">
+            <div class="service-card">
                 <div class="service-icon">
-                    <i class="fas fa-briefcase"></i>
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Sigorta Hukuku</h3>
+                <p>Sigorta ve tazminat davalarında uzman hukuki danışmanlık</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-balance-scale"></i>
                 </div>
                 <h3>Ticaret Hukuku</h3>
-                <p>Şirketler hukuku alanında uzman danışmanlık</p>
-            </a>
-            <a href="/gayrimenkul-hukuku" class="service-card fade-in-section">
-                <div class="service-icon">
-                    <i class="fas fa-home"></i>
-                </div>
-                <h3>Gayrimenkul Hukuku</h3>
-                <p>Tüm gayrimenkul işlemlerinizde profesyonel destek</p>
-            </a>
-            <a href="/dava-tahkim" class="service-card fade-in-section">
+                <p>Şirketler ve ticari uyuşmazlıklar konusunda uzman danışmanlık</p>
+            </div>
+            <div class="service-card">
                 <div class="service-icon">
                     <i class="fas fa-gavel"></i>
                 </div>
-                <h3>Dava ve Tahkim</h3>
-                <p>Ulusal ve uluslararası uyuşmazlık çözümlerinde uzman yaklaşım</p>
-            </a>
+                <h3>Ceza Hukuku</h3>
+                <p>Ceza davalarında profesyonel savunma ve danışmanlık</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-file-contract"></i>
+                </div>
+                <h3>Borçlar Hukuku</h3>
+                <p>Sözleşme ve borç ilişkilerinde hukuki destek</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Aile Hukuku</h3>
+                <p>Aile hukuku alanında uzman danışmanlık ve çözüm</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <h3>Tazminat Hukuku</h3>
+                <p>Her türlü tazminat davasında profesyonel destek</p>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="stats-section">
-    <div class="stats-content">
-        <div class="stat-item fade-in-section">
-            <div class="stat-number">20+</div>
-            <div class="stat-label">Yıllık Tecrübe</div>
-        </div>
-        <div class="stat-item fade-in-section">
-            <div class="stat-number">1000+</div>
-            <div class="stat-label">Başarılı Dava</div>
-        </div>
-        <div class="stat-item fade-in-section">
-            <div class="stat-number">500+</div>
-            <div class="stat-label">Mutlu Müvekkil</div>
+<div class="contact-section">
+    <div class="container">
+        <h2 class="section-title">Bize Ulaşın</h2>
+        <div class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Adınız Soyadınız" required />
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="E-posta Adresiniz" required />
+            </div>
+            <div class="form-group">
+                <input type="tel" placeholder="Telefon Numaranız" required />
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Mesajınız" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Gönder</button>
         </div>
     </div>
-</div>
-
-<div class="floating-contact">
-    <a href="/iletisim" class="cta-button primary">İletişime Geçin</a>
 </div>
 
 @code {
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+    protected override void OnInitialized()
     {
-        if (firstRender)
-        {
-            await JS.InvokeVoidAsync("initParallax");
-            StateHasChanged();
-        }
+        base.OnInitialized();
     }
 }

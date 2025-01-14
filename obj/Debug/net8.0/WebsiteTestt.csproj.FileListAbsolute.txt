@@ -24,3 +24,5 @@ C:\Users\mucah\Desktop\CursorProjectsFolder\WebsiteTestt\obj\Debug\net8.0\refint
 C:\Users\mucah\Desktop\CursorProjectsFolder\WebsiteTestt\obj\Debug\net8.0\WebsiteTestt.pdb
 C:\Users\mucah\Desktop\CursorProjectsFolder\WebsiteTestt\obj\Debug\net8.0\WebsiteTestt.genruntimeconfig.cache
 C:\Users\mucah\Desktop\CursorProjectsFolder\WebsiteTestt\obj\Debug\net8.0\ref\WebsiteTestt.dll
+C:\Users\mucah\Desktop\CursorProjectsFolder\WebsiteTestt\obj\Debug\net8.0\WebsiteTestt.sourcelink.json
+C:\Users\mucah\Desktop\CursorProjectsFolder\WebsiteTestt\bin\Debug\net8.0\appsettings.Development.json

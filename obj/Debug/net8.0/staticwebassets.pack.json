@@ -29,8 +29,44 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\images\\library-bg.jpg",
-      "PackagePath": "staticwebassets\\images\\library-bg.jpg"
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\images\\articles\\kentsel-donusum.avif",
+      "PackagePath": "staticwebassets\\images\\articles\\kentsel-donusum.avif"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\images\\articles\\ticaret-kanunu.avif",
+      "PackagePath": "staticwebassets\\images\\articles\\ticaret-kanunu.avif"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\images\\articles\\uzaktan-calisma.avif",
+      "PackagePath": "staticwebassets\\images\\articles\\uzaktan-calisma.avif"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\images\\library-bg.jpeg",
+      "PackagePath": "staticwebassets\\images\\library-bg.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\images\\slider\\slide1.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\slide1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\images\\slider\\slide2.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\slide2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\images\\slider\\slide3.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\slide3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\images\\slider\\slide4.png",
+      "PackagePath": "staticwebassets\\images\\slider\\slide4.png"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\images\\slider\\slide5.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\slide5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\images\\team\\lawyer1.avif",
+      "PackagePath": "staticwebassets\\images\\team\\lawyer1.avif"
     },
     {
       "Id": "C:\\Users\\mucah\\Desktop\\CursorProjectsFolder\\WebsiteTestt\\wwwroot\\js\\site.js",

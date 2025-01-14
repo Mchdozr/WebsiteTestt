@@ -7,9 +7,69 @@
         <FocusOnNavigate RouteData="@routeData" Selector="h1" />
     </Found>
     <NotFound>
-        <PageTitle>Not found</PageTitle>
+        <PageTitle>Sayfa Bulunamadı</PageTitle>
         <LayoutView Layout="@typeof(MainLayout)">
-            <p role="alert">Üzgünüz, bu sayfa bulunamadı.</p>
+            <div class="not-found">
+                <h1>404</h1>
+                <p>Üzgünüz, aradığınız sayfa bulunamadı.</p>
+                <a href="/" class="btn-primary">Anasayfaya Dön</a>
+            </div>
         </LayoutView>
     </NotFound>
 </Router>
+
+<style>
+    .error-page {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--light-bg);
+        padding: 2rem;
+    }
+
+    .error-content {
+        text-align: center;
+        background: var(--white);
+        padding: 3rem;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .error-content h1 {
+        font-size: 6rem;
+        color: var(--primary-color);
+        margin: 0;
+        line-height: 1;
+    }
+
+    .error-content h2 {
+        color: var(--text-color);
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    .error-content p {
+        color: var(--secondary-color);
+        margin-bottom: 2rem;
+    }
+
+    .btn-primary {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: var(--primary-color);
+        color: var(--white);
+        text-decoration: none;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-primary:hover {
+        background-color: var(--secondary-color);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+</style>

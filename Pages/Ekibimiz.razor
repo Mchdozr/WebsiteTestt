@@ -1,0 +1,208 @@
+@page "/ekibimiz"
+
+<div class="page-header">
+    <div class="container">
+        <h1>Ekibimiz</h1>
+    </div>
+</div>
+
+<section class="team-section">
+    <div class="container">
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="images/lawyer1.jpg" alt="Av. Gaye Hanım" />
+                </div>
+                <div class="member-info">
+                    <h2>Av. Gaye Hanım</h2>
+                    <h3>Kurucu Ortak</h3>
+                    <p class="member-description">
+                        20 yılı aşkın deneyimi ile ticaret hukuku ve şirketler hukuku alanlarında uzmanlaşmıştır.
+                        İstanbul Üniversitesi Hukuk Fakültesi mezunu olan Av. Gaye Hanım, kariyeri boyunca
+                        birçok önemli davada müvekkillerini başarıyla temsil etmiştir.
+                    </p>
+                    <div class="member-specialties">
+                        <h4>Uzmanlık Alanları</h4>
+                        <ul>
+                            <li>Ticaret Hukuku</li>
+                            <li>Şirketler Hukuku</li>
+                            <li>Sözleşmeler Hukuku</li>
+                            <li>Uluslararası Ticaret Hukuku</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="images/lawyer2.jpg" alt="Av. Mehmet Bey" />
+                </div>
+                <div class="member-info">
+                    <h2>Av. Mehmet Bey</h2>
+                    <h3>Kıdemli Ortak</h3>
+                    <p class="member-description">
+                        15 yıllık deneyimi ile iş hukuku ve sosyal güvenlik hukuku alanlarında uzmanlaşmıştır.
+                        Ankara Üniversitesi Hukuk Fakültesi mezunu olan Av. Mehmet Bey, işçi-işveren
+                        uyuşmazlıklarında uzman arabulucu olarak da görev yapmaktadır.
+                    </p>
+                    <div class="member-specialties">
+                        <h4>Uzmanlık Alanları</h4>
+                        <ul>
+                            <li>İş Hukuku</li>
+                            <li>Sosyal Güvenlik Hukuku</li>
+                            <li>Arabuluculuk</li>
+                            <li>İdare Hukuku</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="images/lawyer3.jpg" alt="Av. Ayşe Hanım" />
+                </div>
+                <div class="member-info">
+                    <h2>Av. Ayşe Hanım</h2>
+                    <h3>Ortak Avukat</h3>
+                    <p class="member-description">
+                        10 yıllık deneyimi ile gayrimenkul hukuku ve inşaat hukuku alanlarında uzmanlaşmıştır.
+                        Galatasaray Üniversitesi Hukuk Fakültesi mezunu olan Av. Ayşe Hanım, kentsel dönüşüm
+                        projelerinde hukuki danışmanlık konusunda geniş tecrübeye sahiptir.
+                    </p>
+                    <div class="member-specialties">
+                        <h4>Uzmanlık Alanları</h4>
+                        <ul>
+                            <li>Gayrimenkul Hukuku</li>
+                            <li>İnşaat Hukuku</li>
+                            <li>Kentsel Dönüşüm</li>
+                            <li>Kat Mülkiyeti Hukuku</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .page-header {
+        background-color: var(--primary-color);
+        color: var(--white);
+        padding: 4rem 0;
+        margin-bottom: 4rem;
+    }
+
+    .page-header h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .team-section {
+        padding: 2rem 0 6rem;
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        padding: 0 1rem;
+    }
+
+    .team-member {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 2rem;
+        background: var(--white);
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .member-image {
+        width: 100%;
+        height: 400px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .member-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .member-info h2 {
+        color: var(--primary-color);
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .member-info h3 {
+        color: var(--accent-color);
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .member-description {
+        color: var(--text-color);
+        line-height: 1.8;
+        margin-bottom: 2rem;
+    }
+
+    .member-specialties {
+        background: var(--light-bg);
+        padding: 1.5rem;
+        border-radius: 8px;
+    }
+
+    .member-specialties h4 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .member-specialties ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .member-specialties li {
+        color: var(--text-color);
+        padding: 0.5rem 0;
+    }
+
+    .member-specialties li::before {
+        content: "•";
+        color: var(--accent-color);
+        font-weight: bold;
+        margin-right: 0.5rem;
+    }
+
+    @@media (max-width: 992px) {
+        .team-member {
+            grid-template-columns: 1fr;
+        }
+
+        .member-image {
+            height: 300px;
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .page-header h1 {
+            font-size: 2rem;
+        }
+
+        .member-info h2 {
+            font-size: 1.8rem;
+        }
+
+        .member-specialties ul {
+            grid-template-columns: 1fr;
+        }
+    }
+</style> 

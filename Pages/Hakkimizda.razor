@@ -1,30 +1,137 @@
 @page "/hakkimizda"
 
-<div class="page-container">
-    <h1 class="page-title">Hakkımızda</h1>
-    <div class="about-content">
-        <div class="about-text">
-            <p class="lead">20 yılı aşkın tecrübemizle, hukuki danışmanlık ve dava takibi konularında uzman kadromuzla yanınızdayız.</p>
-            
-            <h2>Misyonumuz</h2>
-            <p>Müvekkillerimizin haklarını en üst düzeyde korumak ve hukuki süreçlerde en iyi sonucu elde etmek için çalışıyoruz.</p>
-            
-            <h2>Vizyonumuz</h2>
-            <p>Türkiye'nin önde gelen hukuk bürolarından biri olarak, müvekkillerimize uluslararası standartlarda hizmet sunmak.</p>
-            
-            <h2>Değerlerimiz</h2>
-            <ul>
-                <li>Profesyonellik</li>
-                <li>Güvenilirlik</li>
-                <li>Şeffaflık</li>
-                <li>Müvekkil Odaklılık</li>
-            </ul>
-        </div>
-        <div class="team-section">
-            <h2>Ekibimiz</h2>
-            <div class="team-grid">
-                <!-- Ekip üyeleri buraya eklenecek -->
+<div class="about-hero">
+    <div class="container">
+        <h1>Hakkımızda</h1>
+        <p>Profesyonel ve Güvenilir Hukuki Danışmanlık</p>
+    </div>
+</div>
+
+<div class="about-content">
+    <div class="container">
+        <div class="team-member">
+            <div class="member-image">
+                <img src="images/team/lawyer1.avif" alt="Av. Gaye Hanım" />
+            </div>
+            <div class="member-info">
+                <h2>Av. Gaye Hanım</h2>
+                <p class="member-title">Kurucu Ortak</p>
+                <p class="member-description">
+                    20 yılı aşkın hukuki tecrübesiyle, özellikle Ticaret Hukuku ve Şirketler Hukuku alanlarında uzmanlaşmış olan Av. Gaye Hanım, müvekkillerine kapsamlı hukuki danışmanlık hizmetleri sunmaktadır.
+                </p>
+                <div class="member-expertise">
+                    <h3>Uzmanlık Alanları:</h3>
+                    <ul>
+                        <li>Ticaret Hukuku</li>
+                        <li>Şirketler Hukuku</li>
+                        <li>Sözleşmeler Hukuku</li>
+                        <li>Uluslararası Ticaret Hukuku</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div> 
+</div>
+
+<style>
+    .about-hero {
+        background-color: var(--primary-color);
+        padding: 6rem 0 4rem;
+        text-align: center;
+        color: var(--white);
+        margin-bottom: 4rem;
+    }
+
+    .about-hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: var(--white);
+    }
+
+    .about-hero p {
+        font-size: 1.25rem;
+        color: var(--accent-color);
+    }
+
+    .about-content {
+        padding: 4rem 0;
+    }
+
+    .team-member {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 3rem;
+        align-items: start;
+        background: var(--white);
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .member-image img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .member-info h2 {
+        color: var(--primary-color);
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .member-title {
+        color: var(--accent-color);
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .member-description {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 2rem;
+        color: var(--text-color);
+    }
+
+    .member-expertise h3 {
+        color: var(--primary-color);
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .member-expertise ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .member-expertise li {
+        padding: 0.5rem 0;
+        color: var(--text-color);
+        font-size: 1.1rem;
+    }
+
+    .member-expertise li:before {
+        content: "•";
+        color: var(--accent-color);
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    @@media (max-width: 768px) {
+        .team-member {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            padding: 1.5rem;
+        }
+
+        .about-hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .member-info h2 {
+            font-size: 1.8rem;
+        }
+    }
+</style> 

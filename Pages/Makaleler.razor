@@ -1,0 +1,276 @@
+@page "/makaleler"
+@inject IJSRuntime JSRuntime
+
+<div class="articles-hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Makaleler</h1>
+            <div class="hero-divider"></div>
+            <p>Hukuki görüş ve güncel gelişmeler</p>
+        </div>
+    </div>
+</div>
+
+<div class="articles-section">
+    <div class="container">
+        <div class="articles-grid">
+            <div class="article-card fade-in">
+                <div class="article-image">
+                    <img src="images/articles/ticaret-kanunu.avif" 
+                         alt="Ticaret Kanunu" 
+                         loading="lazy"
+                         onerror="this.src='images/default-article.jpg'" />
+                </div>
+                <div class="article-content">
+                    <span class="article-date">15 Ocak 2024</span>
+                    <h2>Yeni Türk Ticaret Kanunu'nun Getirdiği Yenilikler</h2>
+                    <p>Türk Ticaret Kanunu'ndaki son değişiklikler ve işletmelere etkileri...</p>
+                    <a href="/makale/ticaret-kanunu" class="read-more">Devamını Oku</a>
+                </div>
+            </div>
+
+            <div class="article-card fade-in">
+                <div class="article-image">
+                    <img src="images/articles/uzaktan-calisma.avif" 
+                         alt="Uzaktan Çalışma" 
+                         loading="lazy"
+                         onerror="this.src='images/default-article.jpg'" />
+                </div>
+                <div class="article-content">
+                    <span class="article-date">10 Ocak 2024</span>
+                    <h2>Uzaktan Çalışma ve Hukuki Boyutları</h2>
+                    <p>Pandemi sonrası kalıcılaşan uzaktan çalışma düzeninin hukuki çerçevesi...</p>
+                    <a href="/makale/uzaktan-calisma" class="read-more">Devamını Oku</a>
+                </div>
+            </div>
+
+            <div class="article-card fade-in">
+                <div class="article-image">
+                    <img src="images/articles/kentsel-donusum.avif" 
+                         alt="Kentsel Dönüşüm" 
+                         loading="lazy"
+                         onerror="this.src='images/default-article.jpg'" />
+                </div>
+                <div class="article-content">
+                    <span class="article-date">5 Ocak 2024</span>
+                    <h2>Kentsel Dönüşüm Sürecinde Hak Sahiplerinin Hakları</h2>
+                    <p>Kentsel dönüşüm projelerinde mülk sahiplerinin yasal hakları...</p>
+                    <a href="/makale/kentsel-donusum" class="read-more">Devamını Oku</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#" class="next">Sonraki</a>
+        </div>
+    </div>
+</div>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await InitializeFadeInAnimation();
+        }
+    }
+
+    private async Task InitializeFadeInAnimation()
+    {
+        await JSRuntime.InvokeVoidAsync("initializeFadeIn");
+    }
+}
+
+<style>
+.articles-hero {
+    background-color: rgba(26, 60, 97, 0.2);
+    padding: 1.5rem 0;
+    color: var(--white);
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.articles-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(26, 60, 97, 0.4), rgba(44, 82, 130, 0.4));
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero-content h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.hero-divider {
+    width: 2px;
+    height: 30px;
+    background: var(--accent-color);
+    margin: 0;
+    border-radius: 2px;
+}
+
+.hero-content p {
+    color: var(--text-color);
+    font-size: 1rem;
+    margin: 0;
+    opacity: 0.9;
+}
+
+@@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero-divider {
+        width: 50px;
+        height: 2px;
+        margin: 0.5rem 0;
+    }
+}
+
+.section-subtitle {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.article-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.article-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.article-image {
+    height: 200px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.article-card:hover .article-image img {
+    transform: scale(1.1);
+}
+
+.article-content {
+    padding: 1.5rem;
+}
+
+.article-date {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+.article-content h2 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.article-content p {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: var(--accent-color);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem 0;
+}
+
+.pagination a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.pagination a:hover,
+.pagination a.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.pagination .next {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+@@media (max-width: 992px) {
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@@media (max-width: 768px) {
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style> 
